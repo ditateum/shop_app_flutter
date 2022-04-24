@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../providers/orders.dart' show Orders;
 import '../widgets/order_item.dart';
+import '../widgets/app_drawer.dart';
 
 class OrdersScreen extends StatelessWidget {
   static const routeName = '/order';
@@ -16,6 +17,7 @@ class OrdersScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Your Orders'),
       ),
+      drawer: const AppDrawer(),
       body: ListView.builder(
         itemCount: orderData.orders.length,
         itemBuilder: (context, index) => OrderItem(orderData.orders[index]),
