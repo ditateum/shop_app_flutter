@@ -21,7 +21,7 @@ class ProductItem extends StatelessWidget {
           onTap: () {
             Navigator.pushNamed(
               context,
-              ProductDetailScreen.nameRoute,
+              ProductDetailScreen.routeName,
               arguments: product.id,
             );
           },
