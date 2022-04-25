@@ -52,7 +52,6 @@ class CartScreen extends StatelessWidget {
                         cart.items.values.toList(),
                         cart.totalAmount,
                       );
-                      Navigator.pushNamed(context, OrdersScreen.routeName);
                       cart.clear();
                     },
                     child: Text(
